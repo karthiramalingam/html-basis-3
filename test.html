@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+    ::placeholder{
+        background-color:yellow;
+        text-shadow: 10px 0px 0px 10px black;
+    }
+    div{
+        overflow-x: scroll;
+        overflow-y: scroll;
+        width: 500px;
+        height: 100px;
+       border: 1px solid black;
+    }
+ </style>
+</head>
+<body>
+    <form>
+        <h2>Test Form</h2>
+        <label>Text Field containing Plaintext</label><br>
+        <br>
+        <input type="text" placeholder="">
+        <label>Your Name</label><br>
+        <br>
+        <label>Multiple-Line Text Field</label>
+        <br>
+        <div>Default contents go here.</div>
+        <label>Checkbox</label>
+        <input type="checkbox"><label>Hungry</label><br>
+        <label>Text Field containing a Numeric Value </label>
+        <input type="text" placeholder="98.6"><label>Blood Temperature(80.0-120.0)</label><br>
+        <br>
+        <label>Single-SELECT</label><br>
+        <!-- <input list="Select" name="Single-SELECT" id="select"> -->
+        <select>
+            <option>Red</option>
+            <option>Blue</option>
+        </select>
+        <br>
+        <br>
+        <label>Multiple-SELECT</label><br>
+        <select multiple>
+            <option>Pistachio</option>
+            <option>Walnut</option>
+            <option>Creme</option>
+        </select>
+        <br>
+        <br>
+        <label>Exclusive Radio Button Group: Age of Truck in Years</label>
+        <input type="radio" name="age" >
+        <label>1</label>
+        <input type="radio" name="age" >
+        <label>2</label>
+        <input type="radio" name="age" >
+        <label>3</label>
+        <input type="radio" name="age" >
+        <label>4</label>
+        <br>
+        <label>Nonexclusive Checkbox Group: Voting for Zero through Four Candidates </label>
+        <input type="checkbox" name="Candidates">
+        <label>A</label>
+        <input type="checkbox" name="Candidates">
+        <label>B</label>
+        <input type="checkbox" name="Candidates">
+        <label>C</label>
+        <input type="checkbox" name="Candidates">
+        <label>D</label><br>
+        <br>
+        <input type="submit" value="Submit Request">
+        <input type="reset" value="Reset Request">
+    </form>
+</body>
+</html>

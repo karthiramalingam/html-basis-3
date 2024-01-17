@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table.one,th,td{
+          border-style:inherit;
+          border:2px solid grey;
+          border-width: 5px;
+          border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+        }
+        table.two{
+            border-style: ridge;
+          border:2px solid grey;
+          border-width: 5px;
+          border-collapse: collapse
+        }
+    </style>
+</head>
+<body>
+    <table class="one">
+        <tr>
+            <th colspan="2">HTML TABLE</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td style="text-align: center;"><b>Cell 2</b>
+            <table class="two">
+                <tr>
+                    <td colspan="2"><b>Nested HTML Table</b></td>
+                </tr>
+                <tr>
+                    <td>Cell 2.1</td>
+                    <td>Cell 2.2</td>
+                </tr>
+                <tr>
+                    <td>Cell 2.3</td>
+                    <td>Cell 2.4</td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>
